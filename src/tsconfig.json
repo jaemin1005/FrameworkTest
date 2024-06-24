@@ -1,0 +1,41 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ESNext", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. *//* Modules */
+    "module": "commonjs", /* Specify what module code is generated. *///* 해당 디렉토리를 기준으로 절대 경로를 사용
+    "baseUrl": "./src", /* Specify the base directory to resolve non-relative module names. */
+    "sourceMap": true, /* Create source map files for emitted JavaScript files. */
+    "outDir": "dist", /* Specify an output folder for all emitted files. */
+    "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    /* Type Checking */
+    "strict": true, /* Enable all strict type-checking options. */
+    "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true, /* When type checking, take into account 'null' and 'undefined'. */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "isolatedModules": true
+  },
+  //"include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
