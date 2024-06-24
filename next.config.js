@@ -1,9 +1,14 @@
-const path = require('path');
+const {
+  createVanillaExtractPlugin
+} = require('@vanilla-extract/next-plugin');
+const withVanillaExtract = createVanillaExtractPlugin();
 
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
   typescript: {
     tsconfigPath: "src/tsconfig.json"
   },
-};
+}
+
+module.exports = withVanillaExtract(nextConfig)
