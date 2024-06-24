@@ -1,12 +1,14 @@
 // src/pages/index.tsx
 import React from 'react';
+import { text } from '../styles/styles.css';
+
 
 // React.FC는 타입스크립트에서 React 함수형 컴포넌트를 정의하는 데 사용됩니다.
 const HomePage: React.FC = () => {
   return (
     <div>
       {/* 이곳에 Next.js 페이지의 메인 컨텐츠를 작성합니다 */}
-      <h1>Welcome to Next.js!</h1>
+      <h1 className={text}>Welcome to Next.js!</h1>
     </div>
   );
 };
