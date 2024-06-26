@@ -5,11 +5,15 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "ws": "^8.17.1"
   },
   "scripts": {
     "start": "next start",
     "build": "next build",
     "dev": "next dev"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.10"
   }
 }
