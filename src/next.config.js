@@ -7,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
   typescript: {
-    tsconfigPath: "src/tsconfig.json"
+    tsconfigPath: "tsconfig.json"
   },
 }
 
