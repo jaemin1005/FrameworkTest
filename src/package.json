@@ -6,6 +6,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "socket.io-client": "^4.7.5",
     "ws": "^8.17.1"
   },
   "scripts": {
